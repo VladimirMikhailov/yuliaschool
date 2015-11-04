@@ -9,12 +9,20 @@ html
 
     == stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"
     == stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
+    == stylesheet_link_tag "application"
+
     /[if lt IE 9]
       script src="//html5shim.googlecode.com/svn/trunk/html5.js"
   body
+    header
+      = partial "sidebar"
 
-    = yield
+    main
+      = partial "header"
+      = yield
 
+      footer.page-footer.cyan.darken-3
+        = partial "footer"
     script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"
     = javascript_include_tag "application"

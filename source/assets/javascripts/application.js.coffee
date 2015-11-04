@@ -2,5 +2,5 @@
 //= require_tree .
 
 $ ->
-  $('.parallax').parallax()
+  $(".button-collapse").sideNav();
 

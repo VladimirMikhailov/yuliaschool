@@ -9,6 +9,11 @@ activate :livereload
 
 # https://github.com/middleman/middleman/issues/742
 proxy "/CNAME", "/CNAME.html", layout: false, ignore: true
+proxy "awards", "awards.html"
+proxy "education", "education.html"
+proxy "culture", "culture.html"
+proxy "photos", "photos.html"
+proxy "news", "news.html"
 
 configure :build do
   activate :minify_css
