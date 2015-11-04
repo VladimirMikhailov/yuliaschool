@@ -5,7 +5,7 @@
   border: solid 2px #00838f;
   border-radius: 50%;
   width: 200px;
-  padding: 50px 0;
+  padding: 65px 0;
   transition: transform 200ms linear, filter 200ms linear;
   margin: auto;
 
@@ -22,4 +22,14 @@
 
 .certs-info .row {
   margin-bottom: 50px;
+}
+
+.following-letter {
+  blockquote {
+    font-size: 1.5em;
+  }
+
+  .flow-text {
+    font-style: italic;
+  }
 }
