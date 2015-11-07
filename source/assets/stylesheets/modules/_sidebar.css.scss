@@ -1,3 +1,5 @@
-.side-nav {
-  font-size: 16.5px;
+.side-nav a {
+  @media #{$large-and-up} {
+    font-size: 15px;
+  }
 }
