@@ -31,12 +31,20 @@
 
   .flow-text {
     font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.8;
   }
 }
 
 .following-letter-img {
   width: 300px;
+  margin-top: 9px;
+
+  @media #{$small-and-down} {
+    width: 100%;
+  }
 }
+
 
 .following-letter-subtitle {
   font-size: 1.5em;

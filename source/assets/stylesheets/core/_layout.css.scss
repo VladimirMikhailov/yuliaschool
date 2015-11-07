@@ -1,7 +1,7 @@
 // core/layout applies to layout (margin, padding, sizing)
 // Used for layout and utility classes (`.pull-left`)
 main {
-  @media only screen and (min-width: 601px) {
+  @media #{$large-and-up} {
     padding-left: 240px;
   }
 }
