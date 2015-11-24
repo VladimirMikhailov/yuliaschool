@@ -4,3 +4,15 @@
 .dotted-border {
   border-right: dotted;
 }
+
+.top-nav {
+  position: absolute;
+
+  .mdi-navigation-menu {
+    line-height: 2.8;
+  }
+}
+
+.pinned {
+  position: fixed;
+}
