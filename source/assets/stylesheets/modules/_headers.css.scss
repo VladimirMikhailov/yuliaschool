@@ -1,0 +1,22 @@
+.header {
+  background: image-url("headers/geometry.png") top center no-repeat;
+  background-size: cover;
+  max-height: 498px;
+  padding: 100px 20px 0 20px;
+}
+
+.header-caption {
+  padding: 0 10px;
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  &-content {
+    background-color: $red;
+  }
+}
+
+.header-content {
+  height: 398px;
+}

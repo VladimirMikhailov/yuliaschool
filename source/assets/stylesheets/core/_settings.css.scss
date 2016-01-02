@@ -1,3 +1,66 @@
 // core/settings centers on two things:
 // * @font-face declarations
 // * App-wide settings and variables
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+$red: #EA6C55;
+$black: #424242;
+
+@font-face {
+  font-family: "uni_sans";
+  src: font-url("uni_sans_heavy_italic-webfont.eot");
+  src: font-url("uni_sans_heavy_italic-webfont.eot?#iefix") format("embedded-opentype"),
+  font-url("uni_sans_heavy_italic-webfont.woff2") format("woff2"),
+  font-url("uni_sans_heavy_italic-webfont.woff") format("woff"),
+  font-url("uni_sans_heavy_italic-webfont.ttf") format("truetype"),
+  font-url("uni_sans_heavy_italic-webfont.svg#uni_sansheavy_italic_caps") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "uni_sans";
+  src: font-url("uni_sans_heavy-webfont.eot");
+  src: font-url("uni_sans_heavy-webfont.eot?#iefix") format("embedded-opentype"),
+  font-url("uni_sans_heavy-webfont.woff2") format("woff2"),
+  font-url("uni_sans_heavy-webfont.woff") format("woff"),
+  font-url("uni_sans_heavy-webfont.ttf") format("truetype"),
+  font-url("uni_sans_heavy-webfont.svg#uni_sansheavy_caps") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni_sans";
+  src: font-url("uni_sans_thin_italic-webfont.eot");
+  src: font-url("uni_sans_thin_italic-webfont.eot?#iefix") format("embedded-opentype"),
+  font-url("uni_sans_thin_italic-webfont.woff2") format("woff2"),
+  font-url("uni_sans_thin_italic-webfont.woff") format("woff"),
+  font-url("uni_sans_thin_italic-webfont.ttf") format("truetype"),
+  font-url("uni_sans_thin_italic-webfont.svg#uni_sansthin_italic_caps") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "uni_sans";
+  src: font-url("uni_sans_thin-webfont.eot");
+  src: font-url("uni_sans_thin-webfont.eot?#iefix") format("embedded-opentype"),
+  font-url("uni_sans_thin-webfont.woff2") format("woff2"),
+  font-url("uni_sans_thin-webfont.woff") format("woff"),
+  font-url("uni_sans_thin-webfont.ttf") format("truetype"),
+  font-url("uni_sans_thin-webfont.svg#uni_sansthin_caps") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
