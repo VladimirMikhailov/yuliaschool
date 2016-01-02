@@ -1,0 +1,60 @@
+.awards-carousel {
+  display: table;
+  overflow: hidden;
+  background-color: rgba(42, 42, 42, 0.8);
+
+  > .row {
+    margin-bottom: 0;
+  }
+}
+
+.awards-carousel-img-container {
+  margin-top: 14px;
+}
+
+.awards-carousel-cert-preview {
+  border-left: 1px solid white;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    max-width: 150px;
+    transition: transform 300ms  linear, filter 300ms linear;
+  }
+
+  &.col {
+    padding-bottom: 50px;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .awards-carousel-show {
+      opacity: 1;
+    }
+  }
+}
+
+.awards-carousel-show {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 28px;
+  padding: 1px;
+  opacity: .6;
+}
+
+.awards-carousel-cert-preview,
+.awards-carousel-cert {
+  display: table-cell;
+  vertical-align: top;
+
+  &.col {
+    float: none;
+    padding-top: 24px;
+  }
+}
