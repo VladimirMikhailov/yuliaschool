@@ -8,15 +8,20 @@ $.fn.marketincCarousel = ->
   jcarousel.on "jcarousel:reload jcarousel:create", ->
     carousel = $(@)
     width = carousel.innerWidth()
+    margin = 40
 
     if (width >= 993)
-      width = width / 9
+      width = (width - (margin * 7)) / 7
     else if (width >= 601)
-      width = width / 6
+      width = (width - (margin * 4)) / 4
     else
-      width = width / 3
+      margin = 20
+      width = (width - (margin * 2)) / 2
 
-    carousel.jcarousel("items").css("width", Math.ceil(width) + "px")
+    carousel.jcarousel("items").css
+      width: Math.ceil(width) + "px"
+      "margin-right": margin / 2
+      "margin-left": margin / 2
 
   jcarousel.jcarousel({ wrap: "circular" })
   jcarousel.jcarouselAutoscroll()

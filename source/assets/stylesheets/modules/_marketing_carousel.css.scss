@@ -1,3 +1,7 @@
+.js-marketing-carousel {
+  overflow: hidden;
+}
+
 .marketing-carousel {
   margin-top: 20px;
   font-size: 12px;
@@ -31,7 +35,7 @@
       width: 30px;
       height: 30px;
       text-align: center;
-      background: #4E443C;
+      background: $black;
       color: #fff;
       text-decoration: none;
       text-shadow: 0 0 1px #000;
@@ -40,5 +44,13 @@
 
   &-control-next {
     right: 20px;
+
+    &:after {
+      content: "›";
+    }
+  }
+
+  &-control-prev:after {
+    content: "‹";
   }
 }

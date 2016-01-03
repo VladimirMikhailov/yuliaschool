@@ -2,4 +2,4 @@
 #= require_tree .
 
 $ ->
-  $(".marketing-carousel").marketincCarousel()
+  $(".js-marketing-carousel").marketincCarousel()

@@ -31,21 +31,30 @@
       transform: scale(1.1);
     }
 
-    .awards-carousel-show {
+    .awards-carousel-next-button {
       opacity: 1;
     }
   }
 }
 
-.awards-carousel-show {
+.awards-carousel-next-button {
   position: absolute;
   bottom: 10px;
-  right: 30px;
-  border: 2px solid;
-  border-radius: 50%;
-  width: 28px;
-  padding: 1px;
-  opacity: .6;
+  right: 20px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: white;
+  color: $black;
+  text-decoration: none;
+  text-shadow: 0 0 1px #424242;
+  font: 24px/27px Arial, sans-serif;
+  opacity: .8;
+
+  &:after {
+    content: "›";
+  }
 }
 
 .awards-carousel-cert-preview,
