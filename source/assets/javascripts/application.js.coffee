@@ -1,12 +1,5 @@
-//= require_self
-//= require_tree .
-
-
-window.setPinned = ->
-  $(".toc-wrapper").addClass("pinned")
+#= require_self
+#= require_tree .
 
 $ ->
-  $(".button-collapse").sideNav()
-  $(".scrollspy").scrollSpy()
-
-  $(".toc-wrapper").pushpin({ top: $(".toc-wrapper").offset().top })
+  $(".marketing-carousel").marketincCarousel()

@@ -1,4 +1,44 @@
 .marketing-carousel {
   margin-top: 20px;
   font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+
+  ul {
+    width: 2000em;
+  }
+
+  li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .row {
+    position: absolute;
+    width: 100%;
+  }
+
+  &-control-prev,
+  &-control-next {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background: #4E443C;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0 0 1px #000;
+      font: 24px/27px Arial, sans-serif;
+  }
+
+  &-control-next {
+    right: 20px;
+  }
 }

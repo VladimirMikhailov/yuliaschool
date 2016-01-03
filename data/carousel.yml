@@ -1,0 +1,21 @@
+sites:
+  - image: "banners/olymp.jpg"
+    description: "ГАУ «Республиканский олимпиадный центр» МОиН РТ"
+
+  - image: "banners/innopolis.png"
+    description: " Иннополис. Город - инновация"
+
+  - image: "banners/help_school.jpg"
+    description: "Республиканская акция «Помоги своей школе-2015!» "
+
+  - image: "banners/terract.png"
+    description: "Что делать при появ- лении угрозы теракта"
+
+  - image: "banners/ege.jpg"
+    description: "ЕГЭ и ОГЭ"
+
+  - image: "banners/new_teacher.jpg"
+    description: "Грант «Наш новый учитель»"
+
+  - image: "banners/win.png"
+    description: "70 лет победы"

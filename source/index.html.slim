@@ -66,45 +66,14 @@ title: МБОУ ЛИЦЕЙ №145 &nbsp Авиастроительного ра�
 = partial "awards-carousel"
 
 .marketing-carousel
-  .row
-    .col.s4.m3.l2
-      .card
-        .card-image
-          = image_tag("badges/win.png")
-        .card-content
-          | 70 лет победы
+  ul
+    - data.carousel.sites.each do |site|
+      li
+        .card
+          .card-image
+            = image_tag(site.image)
+            .card-content
+              = site.description
 
-    .col.s4.m3.l2
-      .card
-        .card-image
-          = image_tag("badges/win.png")
-        .card-content
-          | 70 лет победы
-
-    .col.s4.m3.l2
-      .card
-        .card-image
-          = image_tag("badges/win.png")
-        .card-content
-          | 70 лет победы
-
-    .col.s4.m3.l2
-      .card
-        .card-image
-          = image_tag("badges/win.png")
-        .card-content
-          | 70 лет победы
-
-    .col.s4.m3.l2
-      .card
-        .card-image
-          = image_tag("badges/win.png")
-        .card-content
-          | 70 лет победы
-
-    .col.s4.m3.l2
-      .card
-        .card-image
-          = image_tag("badges/win.png")
-        .card-content
-          | 70 лет победы
+  a.marketing-carousel-control-prev.js-control-prev(href="#") ‹
+  a.marketing-carousel-control-next.js-control-next(href="#") ›
