@@ -64,16 +64,3 @@ title: МБОУ ЛИЦЕЙ №145 &nbsp Авиастроительного ра�
       = image_tag("main/yulia.jpg", class: "responsive-img")
 
 = partial "awards-carousel"
-
-.marketing-carousel
-  ul
-    - data.carousel.sites.each do |site|
-      li
-        .card
-          .card-image
-            = image_tag(site.image)
-            .card-content
-              = site.description
-
-  a.marketing-carousel-control-prev.js-control-prev(href="#") ‹
-  a.marketing-carousel-control-next.js-control-next(href="#") ›
