@@ -1,13 +1,12 @@
 .marketing-carousel
-  .js-marketing-carousel
-    ul
-      - data.carousel.sites.each do |site|
-        li
-          .card
-            .card-image
-              = image_tag(site.image)
-              .card-content
-                = site.description
+  ul.js-marketing-carousel
+    - data.carousel.sites.each do |site|
+      li
+        .card
+          .card-image
+            = image_tag(site.image)
+            .card-content
+              = site.description
 
   a.marketing-carousel-control-prev.js-control-prev(href="#")
   a.marketing-carousel-control-next.js-control-next(href="#")

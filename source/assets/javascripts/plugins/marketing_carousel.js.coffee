@@ -1,30 +1,24 @@
-#= require jcarousel/application
+#= require carousel
 #
 $.fn.marketincCarousel = ->
-  jcarousel = $(@)
+  carousel = $(@)
   prev = $(".js-control-prev")
   next = $(".js-control-next")
 
-  jcarousel.on "jcarousel:reload jcarousel:create", ->
-    carousel = $(@)
-    width = carousel.innerWidth()
-    margin = 40
+  carousel.owlCarousel
+    items : 6
+    itemsDesktop : [1000, 4]
+    itemsDesktopSmall : [900, 2]
+    itemsTablet: [600, 2]
+    itemsMobile : false
+    autoPlay: true
+    stopOnHover: true
+    pagination: false
 
-    if (width >= 993)
-      width = (width - (margin * 7)) / 7
-    else if (width >= 601)
-      width = (width - (margin * 4)) / 4
-    else
-      margin = 20
-      width = (width - (margin * 2)) / 2
+  prev.on "click", ->
+    carousel.trigger("owl.prev")
+    false
 
-    carousel.jcarousel("items").css
-      width: Math.ceil(width) + "px"
-      "margin-right": margin / 2
-      "margin-left": margin / 2
-
-  jcarousel.jcarousel({ wrap: "circular" })
-  jcarousel.jcarouselAutoscroll()
-
-  prev.jcarouselControl({ target: '-=1' })
-  next.jcarouselControl({ target: '+=1' })
+  next.on "click", ->
+    carousel.trigger("owl.next")
+    false
