@@ -1,0 +1,57 @@
+.navbar-fixed {
+  position: fixed;
+  height: 78px;
+  transition: transform 300ms linear;
+
+  @media #{$large-and-up} {
+    padding: 0 20px;
+  }
+
+  width: 100%;
+
+  nav {
+    position: initial;
+  }
+
+  &.headroom--pinned {
+    transform: translateY(0);
+  }
+
+  &.headroom--unpinned {
+    transform: translateY(-100%);
+  }
+}
+
+nav {
+  height: 78px;
+  line-height: 78px;
+  background-color: white;
+
+  .brand-logo {
+    color: $black;
+    margin-left: 30px;
+
+    h6 {
+      font-size: 18px;
+
+      small {
+        font-size: 10px;
+      }
+    }
+  }
+
+  a,
+  ul a {
+    color: $black;
+  }
+
+
+  .button-collapse {
+    margin-left: 10px;
+
+    i {
+      line-height: 78px;
+    }
+  }
+}
+

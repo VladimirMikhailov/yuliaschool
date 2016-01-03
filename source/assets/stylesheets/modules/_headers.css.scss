@@ -1,65 +1,8 @@
-.navbar-fixed {
-  position: fixed;
-  height: 78px;
-  transition: transform 300ms linear;
-
-  @media #{$large-and-up} {
-    padding: 0 20px;
-  }
-
-  width: 100%;
-
-  nav {
-    position: initial;
-  }
-
-  &.headroom--pinned {
-    transform: translateY(0);
-  }
-
-  &.headroom--unpinned {
-    transform: translateY(-100%);
-  }
-}
-
-nav {
-  height: 78px;
-  line-height: 78px;
-  background-color: white;
-
-  .brand-logo {
-    color: $black;
-    margin-left: 24px;
-
-    h6 {
-      font-size: 18px;
-
-      small {
-        font-size: 10px;
-      }
-    }
-  }
-
-  a,
-  ul a {
-    color: $black;
-  }
-
-
-  .button-collapse {
-    margin-left: 10px;
-
-    i {
-      line-height: 78px;
-    }
-  }
-}
-
 .header {
   background: image-url("headers/geometry.png") top center no-repeat;
   background-size: cover;
   max-height: 498px;
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
 }
 
 .header-caption {
@@ -69,9 +12,97 @@ nav {
 
   &-content {
     background-color: $red;
+
+    .col {
+      padding: 0;
+    }
+  }
+
+  h5 {
+    @media #{$small-and-down} {
+      text-align: left;
+    }
   }
 }
 
 .header-content {
-  height: 398px;
+  height: 298px;
+}
+
+.header-navigation {
+  position: relative;
+  padding-bottom: 20px;
+
+  .row {
+    margin-bottom: 0;
+  }
+}
+
+.header-geometry-button,
+.header-algebra-button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all .3s;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  color: $white;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 20px;
+
+  &:hover {
+    z-index: 1;
+
+    small {
+      opacity: 1;
+    }
+
+    &:after {
+      height: 400%;
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    background: #fff;
+    content: '';
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-30deg);
+    transition: all .3s;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media #{$medium-and-up} {
+    margin-right: 20px;
+  }
+
+  small {
+    opacity: 0;
+    display: block;
+  }
+}
+
+.header-geometry-button {
+  background-color: rgba(255, 224, 130, .8);
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.header-algebra-button {
+  background-color: rgba(64, 196, 255, .8);
+
+  &:hover {
+    color: $blue;
+  }
 }
