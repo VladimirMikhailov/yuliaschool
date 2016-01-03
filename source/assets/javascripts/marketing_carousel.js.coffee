@@ -2,8 +2,8 @@
 #
 $.fn.marketincCarousel = ->
   jcarousel = $(@)
-  prev = jcarousel.find(".js-control-prev")
-  next = jcarousel.find(".js-control-next")
+  prev = $(".js-control-prev")
+  next = $(".js-control-next")
 
   jcarousel.on "jcarousel:reload jcarousel:create", ->
     carousel = $(@)
