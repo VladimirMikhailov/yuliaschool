@@ -1,21 +1,44 @@
 .main-following-letter {
-  background-color: white;
-  padding-top: 20px;
+  background-color: $white;
   font-size: 14px;
   line-height: 30px;
   margin-bottom: 0;
-  padding-bottom: 20px;
+  max-width: 1200px;
+  padding: 30px 0 30px 30px;
 
   .col {
     padding: 0 20px;
+  }
+
+  &-first-letter {
+    color: $red;
+    float: left;
+    font-size: 66px;
+    line-height: 60px;
+    padding-top: 2px;
+    padding-right: 8px;
+  }
+
+  &-container {
+    column-break-inside: avoid;
+
+    .main-following-letter-paragraph,
+    .main-following-letter-bordered,
+    .main-following-letter-sign,
+    blockquote {
+      padding-right: 50px;
+    }
+
+    @media #{$small-and-down} {
+      column-count: 1;
+    }
+
+    @media #{$medium-and-up} {
+      column-count: 2;
+    }
   }
 }
 
 .main-following-letter-sign {
   font-size: 12px;
-}
-
-.main-following-letter-bordered {
-  border: 10px solid #EA6C55;
-  padding: 20px;
 }
