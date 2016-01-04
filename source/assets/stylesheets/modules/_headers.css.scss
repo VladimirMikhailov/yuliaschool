@@ -56,14 +56,15 @@
 
   &:hover {
     z-index: 1;
+    background: none;
 
     small {
       opacity: 1;
     }
 
     &:after {
-      height: 400%;
-      opacity: 1;
+      height: 200%;
+      opacity: .8;
     }
   }
 
@@ -75,9 +76,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(-30deg);
+    transform: translateX(-50%) translateY(-50%) rotate(8deg);
     transition: all .3s;
-    width: 100%;
+    width: 400%;
     z-index: -1;
   }
 
@@ -95,7 +96,7 @@
   background-color: rgba(255, 224, 130, .8);
 
   &:hover {
-    color: $yellow;
+    color: $yellow-darken;
   }
 }
 
@@ -103,6 +104,6 @@
   background-color: rgba(64, 196, 255, .8);
 
   &:hover {
-    color: $blue;
+    color: $blue-darken;
   }
 }
