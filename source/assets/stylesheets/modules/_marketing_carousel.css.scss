@@ -7,16 +7,11 @@
   font-size: 12px;
   position: relative;
   overflow: hidden;
-  padding: 0 20px;
-
-  li {
-    float: left;
-    margin: 0 20px;
-    width: 83%;
-  }
+  padding: 0 40px;
 
   .card {
     height: 200px;
+    width: 100%;
   }
 
   .row {
@@ -26,17 +21,18 @@
 
   &-control-prev,
   &-control-next {
-      position: absolute;
-      top: 50%;
-      margin-top: -15px;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      background: $black;
-      color: #fff;
-      text-decoration: none;
-      text-shadow: 0 0 1px #000;
-      font: 24px/27px Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: $black;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    z-index: 100;
   }
 
   &-control-next {
@@ -47,7 +43,19 @@
     }
   }
 
+  &-control-prev {
+    left: 20px;
+
+    &:after {
+      content: "‹";
+    }
+  }
+
   &-control-prev:after {
-    content: "‹";
+
+  }
+
+  &-slide {
+    display: flex;
   }
 }

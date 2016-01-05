@@ -1,24 +1,17 @@
-#= require carousel
-#
 $.fn.marketincCarousel = ->
-  carousel = $(@)
-  prev = $(".js-control-prev")
-  next = $(".js-control-next")
-
-  carousel.owlCarousel
-    items : 6
-    itemsDesktop : [1000, 4]
-    itemsDesktopSmall : [900, 2]
-    itemsTablet: [600, 2]
-    itemsMobile : false
-    autoPlay: true
-    stopOnHover: true
-    pagination: false
-
-  prev.on "click", ->
-    carousel.trigger("owl.prev")
-    false
-
-  next.on "click", ->
-    carousel.trigger("owl.next")
-    false
+  swiper = new Swiper $(@),
+    slidesPerView: 6
+    spaceBetween: 40
+    nextButton: '.js-control-next',
+    prevButton: '.js-control-prev',
+    autoplay: 2500
+    breakpoints:
+      1024:
+        slidesPerView: 4
+        spaceBetween: 40
+      900:
+        slidesPerView: 3
+        spaceBetween: 30
+      600:
+        slidesPerView: 2
+        spaceBetween: 20

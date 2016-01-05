@@ -1,7 +1,7 @@
-.marketing-carousel
-  ul.js-marketing-carousel
+.marketing-carousel.js-marketing-carousel
+  .swiper-wrapper
     - data.carousel.sites.each do |site|
-      li
+      .swiper-slide.marketing-carousel-slide
         .card
           .card-image
             = image_tag(site.image)
