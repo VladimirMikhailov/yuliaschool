@@ -1,34 +1,14 @@
-.awards-carousel.white-text
-  .row
-    .awards-carousel-cert.col.m6.s12
-      .row
-        .col.s2
-          .awards-carousel-img-container
-            = image_tag("awards/cert_unesco.jpg", class: "responsive-img")
+.awards-carousel-wrapper
+  .awards-carousel.white-text
+    .swiper-wrapper
+      - data.awards.items.each do |award|
+        .awards-carousel-cert.swiper-slide
+          .card.blue-grey.darken-1
+            .card-image
+              .awards-carousel-img-container
+                =image_tag(award.image, class: "responsive-img")
+            .card-content
+              h5 = award.title
 
-        .col.s10
-          h5 Образование:
-
-          p
-            | 1 - ГОУ ВПО КГТУ им. А.Н. Туполева (КАИ) -
-            |  "Биотехнические и медицинские
-            |  аппараты и системы"
-
-          p
-            | 2 - Институт психологии и образования
-            |  Приволжский межрегиональный центр
-            |  повышения квалификации и профессиональной
-            |  переподготовки работников образования
-            |  КФУ - "Математика"
-
-    .awards-carousel-cert-preview.col.m3.center.hide-on-small-only
-      .awards-carousel-img-container
-        = image_tag("awards/cert_unesco.jpg", class: "responsive-img")
-
-      a.awards-carousel-next-button(href="#")
-
-    .awards-carousel-cert-preview.col.m3.center.hide-on-small-only
-      .awards-carousel-img-container
-        = image_tag("awards/cert_unesco.jpg", class: "responsive-img")
-
-      a.awards-carousel-next-button(href="#")
+              - award.content_blocks.each do |content|
+                p = content

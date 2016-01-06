@@ -5,6 +5,7 @@ $.fn.marketincCarousel = ->
     nextButton: '.js-control-next',
     prevButton: '.js-control-prev',
     autoplay: 2500
+    loop: true
     breakpoints:
       1024:
         slidesPerView: 4

@@ -3,3 +3,23 @@
 // * Functions
 // * Mixins
 // * Keyframe Animations
+@keyframes move-right {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 40px;
+  }
+}
+
+@keyframes move-left {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 40px;
+  }
+}
+
