@@ -2,10 +2,19 @@
   overflow: hidden;
   background-color: rgba(42, 42, 42, 0.8);
   position: relative;
-  width: 160%;
-  left: -30%;
-  right: 30%;
-  padding-top: 80px;
+
+  @media #{$medium-and-up} {
+    width: 160%;
+    left: -30%;
+    right: 30%;
+
+    padding-top: 80px;
+
+    .swiper-slide-active {
+      transform: translateY(-60px);
+    }
+  }
+
   cursor: pointer;
 
   &-wrapper {
@@ -53,9 +62,6 @@
     }
   }
 
-  .swiper-slide-active {
-    transform: translateY(-60px);
-  }
 }
 
 .awards-carousel-img-container {
