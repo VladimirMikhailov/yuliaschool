@@ -4,11 +4,12 @@
       - data.awards.items.each do |award|
         .awards-carousel-cert.swiper-slide
           .card.blue-grey.darken-1
-            .card-image
-              .awards-carousel-img-container
+            .row
+              .col.s3.awards-carousel-img-container
                 =image_tag(award.image, class: "responsive-img")
-            .card-content
-              h5 = award.title
+              .col.s9
+                h5 = award.title
 
-              - award.content_blocks.each do |content|
-                p = content
+                - award.content_blocks.each do |content|
+                  .awards-carousel-content-block
+                    p = content

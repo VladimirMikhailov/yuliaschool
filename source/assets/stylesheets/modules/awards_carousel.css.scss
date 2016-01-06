@@ -15,10 +15,18 @@
     }
   }
 
-  cursor: pointer;
+  &-content-block {
+    margin: 10px 0;
+  }
 
   &-wrapper {
     overflow: hidden;
+  }
+
+  .card {
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
   }
 
   > .row {
@@ -32,6 +40,8 @@
   }
 
   .swiper-slide-prev {
+    cursor: pointer;
+
     &:hover:before {
       animation: move-right 1s infinite alternate;
     }
@@ -48,6 +58,8 @@
   }
 
   .swiper-slide-next {
+    cursor: pointer;
+
     &:hover:before {
       animation: move-left 1s infinite alternate;
     }
@@ -65,9 +77,6 @@
 }
 
 .awards-carousel-img-container {
-  img {
-    height: 200px;
-  }
 }
 
 .awards-carousel-cert-preview {
