@@ -39,7 +39,7 @@ title: Воспитательная работа
     .row
       .col.s12
         h4
-          b важно знать
+          b важно знать:
 
     .row
       .col.s12.m6
@@ -65,6 +65,25 @@ title: Воспитательная работа
                 b
                   | Документ для скачивания:&nbsp;
                   a(href="#") goo.gl/LlTRFP
+
+  .section
+    .row
+      .col.s12
+        h4
+          b наши мероприятия:
+
+    .row
+      .culture-events.col.s12
+        - data.culture_events.events.each do |event|
+          .card
+            .card-content
+              .card-title.cyan-text
+                = event.date
+
+              = event.content
+
+            .card-image
+              = image_tag(event.image)
 
   .culture-parallax-container.parallax-container
     .parallax
