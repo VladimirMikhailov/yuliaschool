@@ -1,6 +1,6 @@
 .navbar-fixed {
   position: fixed;
-  height: 78px;
+  height: $navbar-height;
   transition: transform 300ms linear;
 
   width: 100%;
@@ -19,8 +19,8 @@
 }
 
 nav {
-  height: 78px;
-  line-height: 78px;
+  height: $navbar-height;
+  line-height: $navbar-height;
   background-color: white;
 
   .brand-logo {
@@ -46,7 +46,7 @@ nav {
     margin-left: 10px;
 
     i {
-      line-height: 78px;
+      line-height: $navbar-height;
     }
   }
 }

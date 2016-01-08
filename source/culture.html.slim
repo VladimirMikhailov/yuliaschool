@@ -2,150 +2,39 @@
 title: Воспитательная работа
 ---
 
-.container
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«Великая Битва За Москву»
-      p
-        | Классный час был построен так, чтобы привлечь к участию в мероприятии как можно больше детей.
-        |  По форме это «час памяти», основное содержание которого — сообщения детей о Московской битве.
-        |  В начале в конце классного часа учитель проводит беседу об исторической памяти и патриотизме.
-  .row
-    .col.s6
-      .card-image
-        = image_tag("culture/map-moscow-battle.jpg", class: "responsive-img")
-    .col.s6
-      .card-image
-        = image_tag("culture/battle-moscow-forces.jpg", class: "responsive-img")
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "Великая битва за Москву", "assets/docs/Великая битва за Москву.doc", target: "_blank"
+.culture-container
+  .culture-parallax-container.parallax-container
+    .parallax
+      = image_tag("culture/class_first.png")
 
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«Урок толерантности»
-      p
-        | 20.11.2015 в 7В классе классным руководителем и инициативной группой был проведен
-        |  классный час в форме интерактивного мероприятия «Урок толерантности» с целью формирования
-        |  и поддержания у учащихся толерантного отношения к людям, а также понимание наличия общечеловеческих
-        |  ценностей, важных для всех народов, формирование межкультурного интереса, что очень значимо в
-        |  связи с последними событиями, произошедшими в мире.
+  .section
+    .row
+      .col.s12
+        h5
+          b актив класса
 
-  .row
-    .col.s6
-      .card-image
-        = image_tag("culture/tolerance1.jpg", class: "responsive-img")
-    .col.s6
-      .card-image
-        = image_tag("culture/tolerance2.jpg", class: "responsive-img")
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "Урок толерантности.doc", "assets/docs/tolerance.doc", target: "_blank"
+    .culture-active-carousel.js-culture-active-carousel
+      .swiper-wrapper
+        - data.culture.active.each do |card|
+          .swiper-slide
+            .card
+              .row
+                .col.s12
+                  h6
+                    b = card.title
 
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«Гимн и Кодекс»
+              .row
+                .col.s12
+                  - card.persons.each do |person|
+                    .culture-chip.chip
+                      = image_tag(person.image)
+                      = person.name
+                    .clear
+              .row
+                .col.s12
+                  = card.about
+      .swiper-pagination
 
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-
-      = link_to "Гимн лицея.doc", "assets/docs/gimn.doc", target: "_blank"
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "Кодекс чести и заповеди.doc", "assets/docs/codex.doc", target: "_blank"
-
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«Визит доброты»
-      p
-        | 11 сентября 2015 года в рамках мероприятия «Визит доброты» учащиеся 7 В класса
-        | навестили ветеранов, инвалидов, одиноких пожилых людей. Внимание ребят вместе с
-        | небольшими подарками получили ветераны Сучкова Пелагея Васильевна, Ильин Евгений
-        | Михайлович и Ильина Вера Георгиевна.
-
-  .row
-    .col.s6
-      .card-image
-        = image_tag("culture/visit1.jpg", class: "responsive-img")
-    .col.s6
-      .card-image
-        = image_tag("culture/visit2.jpg", class: "responsive-img")
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "визит доброты - отчет.doc", "assets/docs/визит доброты.doc", target: "_blank"
-
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«Экстремизму - Нет»
-      p
-        | 04.09.2015 г. в 7 В классе классным руководителем был проведен классный час
-        | на тему: «Экстремизму - Нет» «Урок памяти, направленный на развитие у
-        | обучающихся толерантности в межнациональных и межконфессиональных отношениях»
-
-  .row
-    .col.s6
-      .card-image
-        = image_tag("culture/extr1.jpg", class: "responsive-img")
-    .col.s6
-      .card-image
-        = image_tag("culture/extr2.jpg", class: "responsive-img")
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "классный час «Экстремизму - Нет» - отчет.doc", "assets/docs/классный_час_04092015.doc", target: "_blank"
-
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«Спортивный Татарстан»
-      p
-        | 13 сентября 2015 года в соответствии с запланированным мероприятием «Спортивный Татарстан»
-        | была организована учителями физической культуры и проведена Спортивная эстафета среди
-        | учащихся 7-ых классов. В команде от каждого 7-го класса в эстафете приняли участие 8 юношей
-        | и 5 девушек, остальные учащиеся стали группой поддержки для своих одноклассников.
-
-  .row
-    .col.s6
-      .card-image
-        = image_tag("culture/sport1.jpg", class: "responsive-img")
-    .col.s6
-      .card-image
-        = image_tag("culture/sport2.jpg", class: "responsive-img")
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "отчет о проведении спортивного мероприятия.doc", "assets/docs/эстафета, старты 13.09.2015.doc", target: "_blank"
-
-  .row
-    .col.s12
-      h3.cyan-text.darken-3«День дружбы»
-      p
-        | 30.10.2015 в 7В классе классным руководителем и инициативной группой класса был
-        | организован и проведен интерактивный урок-игра «День дружбы», в котором каждый из
-        | учащихся смог принять активное участие. Данное мероприятие было направлено на
-        | определение ценности дружбы, на формирование толерантного обращения друг к другу, а
-        | также правильной жизненной позиции ребят.
-
-  .row
-    .col.s6
-      .card-image
-        = image_tag("culture/friendships1.jpg", class: "responsive-img")
-    .col.s6
-      .card-image
-        = image_tag("culture/friendships2.jpg", class: "responsive-img")
-  .row
-    .col.s1
-      = image_tag("word.svg", class: "responsive-img")
-    .col.s11.text-left
-      = link_to "фотоотчет с мероприятия «День дружбы»", "assets/docs/день дружбы.doc", target: "_blank"
+  .culture-parallax-container.parallax-container
+    .parallax
+      = image_tag("culture/class_second.png")

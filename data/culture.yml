@@ -1,0 +1,66 @@
+active:
+  - title: 'Староста:'
+    about: 'Правая рука классного руководителя, избранный классом самый ответственный ученик 7 В'
+    persons:
+      - name: 'Гомонов Дмитрий'
+        image: 'culture/dmitry.png'
+
+  - title: 'Члены Совета лицеистов:'
+    about: 'Активисты, представляющие интересы нашего класса на общелицейских мероприятиях!'
+    persons:
+      - name: 'Коткова Олеся'
+        image: 'culture/dmitry.png'
+
+      - name: 'Халаева Екатерина'
+        image: 'culture/dmitry.png'
+
+  - title: 'Учебный сектор:'
+    about: 'Ответственныe за состояние учебников и учебных пособий учащихся нашего класса!'
+    persons:
+      - name: 'Латыпова Ралина'
+        image: 'culture/dmitry.png'
+
+      - name: 'Иванкова Инна'
+        image: 'culture/dmitry.png'
+
+      - name: 'Садриева Ясмина'
+        image: 'culture/dmitry.png'
+
+  - title: 'Культмассовый сектор:'
+    about: 'Массовики-затейники 7 В, организаторы общелицейских и внутриклассных мероприятий!'
+    persons:
+      - name: 'Прокопьев Никита'
+        image: 'culture/dmitry.png'
+
+      - name: 'Валиуллин Алик'
+        image: 'culture/dmitry.png'
+
+  - title: 'Ответственные за питание'
+    about: 'Ответственные лица за своевременную организацию горячего питания учащихся 7 В!'
+    persons:
+      - name: 'Федорова Анна'
+        image: 'culture/dmitry.png'
+
+      - name: 'Попова Дарья'
+        image: 'culture/dmitry.png'
+
+  - title: 'Физорг'
+    about: 'Ответственный за физкультурную работу в классе!'
+    persons:
+      - name: 'Латыпова Милана'
+        image: 'culture/dmitry.png'
+
+  - title: 'Редколлегия'
+    about: 'Наша креативная группа!'
+    persons:
+      - name: 'Козловская Ирина'
+        image: 'culture/dmitry.png'
+
+      - name: 'Шишкина Мария'
+        image: 'culture/dmitry.png'
+
+      - name: 'Кириллов Дмитрий'
+        image: 'culture/dmitry.png'
+
+      - name: 'Стукало Роман'
+        image: 'culture/dmitry.png'

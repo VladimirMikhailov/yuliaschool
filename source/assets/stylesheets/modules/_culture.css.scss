@@ -1,0 +1,28 @@
+.culture-parallax-container-top,
+.culture-parallax-container {
+  height: 300px;
+}
+
+.culture-container {
+  position: relative;
+  top: 78px;
+}
+
+.culture-chip {
+  margin-bottom: 10px;
+}
+
+.culture-active-carousel {
+  position: relative;
+  padding-bottom: 40px;
+
+  .card {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    position: relative;
+    transition: all .3s;
+  }
+}
