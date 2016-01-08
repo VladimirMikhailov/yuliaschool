@@ -15,9 +15,16 @@
 .culture-active-carousel {
   position: relative;
   padding-bottom: 40px;
+  overflow: hidden;
 
   .card {
     width: 100%;
+  }
+
+  .card-title {
+    font-size: 15px;
+    color: $black;
+    font-weight: bold;
   }
 
   .swiper-slide {

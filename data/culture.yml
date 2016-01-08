@@ -9,58 +9,58 @@ active:
     about: 'Активисты, представляющие интересы нашего класса на общелицейских мероприятиях!'
     persons:
       - name: 'Коткова Олеся'
-        image: 'culture/dmitry.png'
+        image: 'culture/kotkova_olesya.jpg'
 
       - name: 'Халаева Екатерина'
-        image: 'culture/dmitry.png'
+        image: 'culture/halaeva.jpg'
 
   - title: 'Учебный сектор:'
     about: 'Ответственныe за состояние учебников и учебных пособий учащихся нашего класса!'
     persons:
       - name: 'Латыпова Ралина'
-        image: 'culture/dmitry.png'
+        image: 'culture/latipova_ralina.jpg'
 
       - name: 'Иванкова Инна'
-        image: 'culture/dmitry.png'
+        image: 'culture/ivankova_inna.jpg'
 
       - name: 'Садриева Ясмина'
-        image: 'culture/dmitry.png'
+        image: 'culture/sadrieva_yasmina.jpg'
 
   - title: 'Культмассовый сектор:'
     about: 'Массовики-затейники 7 В, организаторы общелицейских и внутриклассных мероприятий!'
     persons:
       - name: 'Прокопьев Никита'
-        image: 'culture/dmitry.png'
+        image: 'culture/prokopev_nikita.jpg'
 
       - name: 'Валиуллин Алик'
-        image: 'culture/dmitry.png'
+        image: 'culture/valiullin_alik.jpg'
 
   - title: 'Ответственные за питание'
     about: 'Ответственные лица за своевременную организацию горячего питания учащихся 7 В!'
     persons:
       - name: 'Федорова Анна'
-        image: 'culture/dmitry.png'
+        image: 'culture/fedorova_anna.jpg'
 
       - name: 'Попова Дарья'
-        image: 'culture/dmitry.png'
+        image: 'culture/popova_dasha.jpg'
 
   - title: 'Физорг'
     about: 'Ответственный за физкультурную работу в классе!'
     persons:
       - name: 'Латыпова Милана'
-        image: 'culture/dmitry.png'
+        image: 'culture/latipova_milana.jpg'
 
   - title: 'Редколлегия'
     about: 'Наша креативная группа!'
     persons:
       - name: 'Козловская Ирина'
-        image: 'culture/dmitry.png'
+        image: 'culture/kozlovskaya_irina.jpg'
 
       - name: 'Шишкина Мария'
-        image: 'culture/dmitry.png'
+        image: 'culture/shishkina_maria.jpg'
 
       - name: 'Кириллов Дмитрий'
-        image: 'culture/dmitry.png'
+        image: 'culture/kirillov_dmitriy.jpg'
 
       - name: 'Стукало Роман'
-        image: 'culture/dmitry.png'
+        image: 'culture/stukalo.jpg'

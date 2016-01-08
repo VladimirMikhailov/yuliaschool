@@ -16,23 +16,19 @@ title: Воспитательная работа
     .culture-active-carousel.js-culture-active-carousel
       .swiper-wrapper
         - data.culture.active.each do |card|
-          .swiper-slide
-            .card
-              .row
-                .col.s12
-                  h6
-                    b = card.title
+          .swiper-slide.card
+            .card-content
+              .card-title
+                = card.title
 
-              .row
-                .col.s12
-                  - card.persons.each do |person|
-                    .culture-chip.chip
-                      = image_tag(person.image)
-                      = person.name
-                    .clear
-              .row
-                .col.s12
-                  = card.about
+              - card.persons.each do |person|
+                .culture-chip.chip
+                  = image_tag(person.image)
+                  = person.name
+                .clear
+
+              = card.about
+
       .swiper-pagination
 
   .section
@@ -52,7 +48,7 @@ title: Воспитательная работа
               .chip
                 b
                   | Документ для скачивания:&nbsp;
-                  a(href="#") goo.gl/LlTRFP
+                  a(href="http://goo.gl/KoiITd" target="_blank") http://goo.gl/KoiITd
 
       .col.s12.m6
         .card
@@ -64,7 +60,7 @@ title: Воспитательная работа
               .chip
                 b
                   | Документ для скачивания:&nbsp;
-                  a(href="#") goo.gl/LlTRFP
+                  a(href="http://goo.gl/zulGiS" target="_blank") http://goo.gl/zulGiS
 
   .section
     .row
@@ -84,8 +80,6 @@ title: Воспитательная работа
 
             .card-image
               = image_tag(event.image)
-
-  = partial "banners"
 
   .culture-parallax-container.parallax-container
     .parallax
