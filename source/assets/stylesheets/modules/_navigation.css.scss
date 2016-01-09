@@ -1,20 +1,17 @@
 .navbar-fixed {
-  position: fixed;
   height: $navbar-height;
-  transition: transform 300ms linear;
-
   width: 100%;
 
   nav {
-    position: initial;
-  }
+    transition: transform 300ms linear;
 
-  &.headroom--pinned {
-    transform: translateY(0);
-  }
+    &.headroom--pinned {
+      transform: translateY(0);
+    }
 
-  &.headroom--unpinned {
-    transform: translateY(-100%);
+    &.headroom--unpinned {
+      transform: translateY(-100%);
+    }
   }
 }
 

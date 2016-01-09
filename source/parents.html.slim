@@ -1,37 +1,35 @@
-.parents-container
-  .section
-    .parents-card
-      h6.parents-main-announcement.center
-        b
-          | Уважаемые родители, в данном разделе для Вас будут размещены
-          |  самые актуальные объявления, а также предоставлены документы, необходимые для заполнения!
+.section
+  .parents-card
+    h5.parents-main-announcement.center
+      b
+        | Уважаемые родители, в данном разделе для Вас будут размещены
+        |  самые актуальные объявления, а также предоставлены документы, необходимые для заполнения!
 
-  .section
-    .row
-      .col.s12
-        h4
-          b Объявления для родителей:
-    .row
-      - data.parents.announcements.each do |announcement|
-        .col.m4.s6
-          .parents-card
-            .card-content
-              h6
-                b= announcement
+.section
+  .row
+    .col.s12
+      h4
+        b Информация для родителей:
+  .row
+    - data.parents.announcements.each do |announcement|
+      .col.m4.s6
+        .parents-card
+          .card-content
+            h6
+              b= announcement
 
-  .section
-    .row
-      .col.s12
-        h4
-          b Список документов:
+.section
+  .row
+    .col.s12
+      h4
+        b Список документов:
 
-    .parents-card
-      ul.parents-list
-        - data.parents.documents.each do |document|
-          li
-            h6= document.title
-            .chip
-              b
-                | Документ для скачивания:&nbsp;
-                = link_to(document.link, document.link, target: "_blank")
-
+  .parents-card
+    ul.parents-list
+      - data.parents.documents.each do |document|
+        li
+          h6= document.title
+          .chip
+            b
+              | Документ для скачивания:&nbsp;
+              = link_to(document.link, document.link, target: "_blank")

@@ -7,5 +7,5 @@ $ ->
   $(".js-awards-carousel").awardsCarousel()
   $(".js-culture-active-carousel").cultureCarousel()
   $(".button-collapse").sideNav()
-  $(".navbar-fixed").headroom()
+  $("nav").headroom()
   $('.parallax').parallax()
