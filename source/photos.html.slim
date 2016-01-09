@@ -3,10 +3,9 @@ title: Фотогалерея
 ---
 
 .container
-  h4.center.cyan-text.darken-3 Вот как проходят наши уроки и классные часы:
-
   .row
     - 6.times do |index|
       .col.s12.m6
-        .card.card-image.gallery-image-preview
-          = image_tag("gallery/image#{index}.jpg", class: "responsive-img")
+        .card
+          .card-image
+            = image_tag("gallery/image#{index}.jpg", class: "responsive-img")
