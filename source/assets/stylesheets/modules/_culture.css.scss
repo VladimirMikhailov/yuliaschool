@@ -5,7 +5,7 @@
 
 .culture-container {
   position: relative;
-  top: 78px;
+  top: $navbar-height;
 }
 
 .culture-chip {
@@ -13,17 +13,17 @@
 }
 
 .culture-active-carousel {
-  position: relative;
-  padding-bottom: 40px;
   overflow: hidden;
+  padding-bottom: 40px;
+  position: relative;
 
   .card {
     width: 100%;
   }
 
   .card-title {
-    font-size: 15px;
     color: $black;
+    font-size: 15px;
     font-weight: bold;
   }
 

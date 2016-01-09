@@ -1,0 +1,20 @@
+.parents-container {
+  position: relative;
+  top: $navbar-height;
+}
+
+.parents-card {
+  background: $white;
+  padding: 20px;
+  width: 100%;
+}
+
+.parents-main-announcement {
+  color: $red;
+}
+
+.parents-list {
+  li {
+    margin-bottom: 50px;
+  }
+}
