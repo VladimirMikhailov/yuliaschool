@@ -13,10 +13,14 @@
   .row
     - data.parents.announcements.each do |announcement|
       .col.m4.s6
-        .parents-card
+        .parents-card.card
           .card-content
             h6
-              b= announcement
+              b= announcement.content
+
+          - if announcement.image
+            .card-image.center
+              = image_tag(announcement.image)
 
 .section
   .row
