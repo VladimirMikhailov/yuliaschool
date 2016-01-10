@@ -1,0 +1,14 @@
+.olympics-section {
+  .card-title {
+    color: $yellow-darken;
+  }
+
+  &-link-wrapper {
+    display: block;
+    margin-top: 20px;
+  }
+
+  &-img {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+h4 Олимпиады:
+- data.olympics.items.each do |olymp|
+  .section.olympics-section
+    .card
+      .card-content
+        .card-title
+          = olymp.title
+
+        .olympics-section-content
+          = image_tag olymp.image,
+            class: "olympics-section-img img-responsive",
+            align: "left",
+            width: olymp.image_width,
+            height: olymp.image_height,
+            target: "_blank"
+          p= olymp.content
+
+        - if olymp.link
+          .olympics-section-link-wrapper
+            .chip
+              = link_to(olymp.link_content, olymp.link)
