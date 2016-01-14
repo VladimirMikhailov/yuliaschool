@@ -1,5 +1,7 @@
-h4 Олимпиады:
-- data.olympics.items.each do |olymp|
+.section
+  h4 Олимпиады:
+
+- data.olympics.items.reverse.each do |olymp|
   .section.olympics-section
     .card
       .card-content
@@ -11,11 +13,13 @@ h4 Олимпиады:
             class: "olympics-section-img img-responsive",
             align: "left",
             width: olymp.image_width,
-            height: olymp.image_height,
-            target: "_blank"
+            height: olymp.image_height
           p= olymp.content
 
-        - if olymp.link
           .olympics-section-link-wrapper
+            - if olymp.link
+              .chip
+                = link_to(olymp.link_content, olymp.link, target: "_blank")
             .chip
-              = link_to(olymp.link_content, olymp.link)
+              | дата проведения:&nbsp;
+              b= olymp.started_at
