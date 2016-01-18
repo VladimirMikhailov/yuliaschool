@@ -53,10 +53,14 @@ title: МБОУ ЛИЦЕЙ №145 &nbsp Авиастроительного ра�
                   - document.subsections.each do |sub|
                     li= sub
 
-              .algebra-list-chip.chip
-                b
-                  | Документ для скачивания:&nbsp;
-                  = link_to(document.link, document.link, target: "_blank")
+              - if document.link
+                .algebra-list-chip.chip
+                  b
+                    | Документ для скачивания:&nbsp;
+                    = link_to(document.link, document.link, target: "_blank")
+
+              - if document.preview
+                = image_tag(document.preview, class: "responsive-img")
 
   .section
     .row
@@ -72,4 +76,4 @@ title: МБОУ ЛИЦЕЙ №145 &nbsp Авиастроительного ра�
           .card-content
             = exam.content
           .card-action
-            = link_to("Скачать", exam.link, target: "_blank")
+            = link_to("Скачать", "assets/docs/algebra/#{exam.link}", target: "_blank")
