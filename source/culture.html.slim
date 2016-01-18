@@ -70,7 +70,7 @@ title: Воспитательная работа
 
     .row
       .culture-events.col.s12
-        - data.culture_events.events.each do |event|
+        - data.culture_events.events.reverse.each do |event|
           .card
             .card-content
               .card-title.cyan-text
