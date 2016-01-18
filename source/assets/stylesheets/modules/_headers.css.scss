@@ -13,6 +13,14 @@
   &-content {
     background-color: $red;
 
+    &.algebra {
+      background-color: $blue;
+    }
+
+    &.geometry {
+      background-color: $yellow;
+    }
+
     .col {
       padding: 0;
     }
@@ -54,6 +62,7 @@
   transition: all .3s;
   width: 100%;
 
+  &.active,
   &:hover {
     background: none;
     z-index: 1;
@@ -96,6 +105,7 @@
 .header-geometry-button {
   background-color: rgba(255, 224, 130, .8);
 
+  &.active,
   &:hover {
     color: $yellow-darken;
   }
@@ -104,6 +114,7 @@
 .header-algebra-button {
   background-color: rgba(64, 196, 255, .8);
 
+  &.active,
   &:hover {
     color: $blue-darken;
   }

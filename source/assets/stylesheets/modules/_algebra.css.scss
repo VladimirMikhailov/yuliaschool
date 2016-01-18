@@ -1,0 +1,43 @@
+.algebra-exam {
+  &-title-wrapper {
+    background: $blue;
+    min-height: 50px;
+    padding: 20px;
+  }
+}
+
+.algebra-card {
+  background: $white;
+  padding: 20px;
+  width: 100%;
+}
+
+.algebra-exams-container {
+  @include cards-column-break();
+}
+
+.algebra-list {
+  background: $white;
+  width: 100%;
+
+  &-content {
+    border-left: 4px solid $blue;
+    padding: 0 20px;
+  }
+
+  &-section {
+    padding: 20px 0;
+  }
+
+  &-subsections {
+    margin-left: 20px;
+
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  &-chip {
+    margin-top: 10px;
+  }
+}

@@ -1,24 +1,4 @@
 .culture-events {
-  column-break-inside: avoid;
-
-  .card {
-    display: inline-block;
-    overflow: visible;
-    margin-bottom: 50px;
-  }
-
-  @media #{$small-and-down} {
-    column-count: 1;
-  }
-
-  @media #{$medium-and-up} {
-    column-count: 2;
-    column-gap: 30px;
-  }
-
-  @media #{$large-and-up} {
-    column-count: 3;
-    column-gap: 50px;
-  }
+  @include cards-column-break();
 }
 
