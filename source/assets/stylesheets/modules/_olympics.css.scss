@@ -1,6 +1,14 @@
 .olympics-section {
   .card-title {
     color: $yellow-darken;
+
+  }
+
+  .card .card-content .card-title {
+    @media #{$small-and-down} {
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
   }
 
   &-link-wrapper {
@@ -10,6 +18,11 @@
 
   &-img {
     margin-right: 10px;
+
+    @media #{$small-and-down} {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .chip {

@@ -45,10 +45,7 @@ title: Воспитательная работа
               h5.cyan-text
                 b «Гимн лицея»
 
-              .chip
-                b
-                  | Документ для скачивания:&nbsp;
-                  a(href="http://goo.gl/KoiITd" target="_blank") http://goo.gl/KoiITd
+              = partial("download_link_chip", locals: { link: "http://goo.gl/KoiITd" })
 
       .col.s12.m6
         .card
@@ -57,10 +54,7 @@ title: Воспитательная работа
               h5.cyan-text
                 b «кодекс чести лицея»
 
-              .chip
-                b
-                  | Документ для скачивания:&nbsp;
-                  a(href="http://goo.gl/zulGiS" target="_blank") http://goo.gl/zulGiS
+              = partial("download_link_chip", locals: { link: "http://goo.gl/zulGiS" })
 
   .section
     .row

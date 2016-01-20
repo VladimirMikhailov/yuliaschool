@@ -37,7 +37,4 @@ title: Инфорамация для родителей
       - data.parents.documents.each do |document|
         li
           h6= document.title
-          .chip
-            b
-              | Документ для скачивания:&nbsp;
-              = link_to(document.link, document.link, target: "_blank")
+          = partial("download_link_chip", locals: { link: document.link })
