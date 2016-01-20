@@ -10,6 +10,7 @@ gem "middleman-autoprefixer"
 gem "middleman-imageoptim"
 gem "materialize-sass"
 gem "jquery-middleman"
+gem "therubyracer", platforms: :ruby
 
 gem "slim"
 gem "sass"
