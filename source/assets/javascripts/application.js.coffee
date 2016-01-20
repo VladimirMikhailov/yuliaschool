@@ -1,4 +1,5 @@
 #= require headroom
+#= require swiper
 #= require_self
 #= require_tree .
 
