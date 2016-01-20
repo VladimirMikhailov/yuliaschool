@@ -14,5 +14,5 @@ $.fn.marketincCarousel = ->
         slidesPerView: 3
         spaceBetween: 30
       600:
-        slidesPerView: 2
+        slidesPerView: 1
         spaceBetween: 20

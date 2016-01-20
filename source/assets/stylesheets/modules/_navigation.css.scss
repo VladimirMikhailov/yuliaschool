@@ -20,9 +20,12 @@ nav {
   line-height: $navbar-height;
   background-color: white;
 
+  @media #{$medium-and-up} {
+    padding-left: 20px;
+  }
+
   .brand-logo {
     color: $black;
-    margin-left: 30px;
 
     h6 {
       font-size: 18px;

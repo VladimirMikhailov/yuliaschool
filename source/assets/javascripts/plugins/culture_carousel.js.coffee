@@ -9,5 +9,5 @@ $.fn.cultureCarousel = ->
       900:
         slidesPerView: 3
       600:
-        slidesPerView: 2
+        slidesPerView: 1
         spaceBetween: 20
