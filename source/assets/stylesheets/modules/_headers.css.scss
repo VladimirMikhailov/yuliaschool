@@ -10,6 +10,10 @@
     margin-bottom: 0;
   }
 
+  &-job-title {
+    margin-bottom: 0;
+  }
+
   &-content {
     background-color: $red;
 
@@ -44,6 +48,16 @@
   .row {
     margin-bottom: 0;
   }
+
+  .btn:first-child {
+    @media #{$small-and-down} {
+      margin-right: 10px;
+    }
+
+    @media #{$medium-and-up} {
+      margin-right: 20px;
+    }
+  }
 }
 
 .header-geometry-button,
@@ -60,6 +74,17 @@
   position: relative;
   text-align: left;
   transition: all .3s;
+
+  @media #{$small-and-down} {
+    width: 48%;
+    line-height: 32px;
+    padding: 0 15px;
+  }
+
+  @media #{$medium-and-up} {
+    width: 30%;
+  }
+
   width: 100%;
 
   &.active,
@@ -89,10 +114,6 @@
     transition: all .3s;
     width: 400%;
     z-index: -1;
-  }
-
-  @media #{$medium-and-up} {
-    margin-right: 20px;
   }
 
   small {
