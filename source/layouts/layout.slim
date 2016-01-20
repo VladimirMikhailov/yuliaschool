@@ -9,7 +9,6 @@ html
 
     == stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"
     == stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
-    == stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css"
     == stylesheet_link_tag "application"
 
     /[if lt IE 9]
@@ -22,8 +21,4 @@ html
       footer.page-footer.cyan.darken-3
         = partial "footer"
 
-    script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"
-
-    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"
-    = javascript_include_tag "application"
+    = javascript_include_tag("application", async: true, defer: "defer")

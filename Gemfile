@@ -8,6 +8,8 @@ gem "middleman-livereload"
 gem "middleman-deploy"
 gem "middleman-autoprefixer"
 gem "middleman-imageoptim"
+gem "materialize-sass"
+gem "jquery-middleman"
 
 gem "slim"
 gem "sass"
