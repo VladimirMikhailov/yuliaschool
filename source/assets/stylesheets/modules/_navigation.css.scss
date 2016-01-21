@@ -19,6 +19,7 @@ nav {
   height: $navbar-height;
   line-height: $navbar-height;
   background-color: white;
+  text-transform: uppercase;
 
   @media #{$medium-and-up} {
     padding-left: 20px;
