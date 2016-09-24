@@ -25,3 +25,56 @@ title: МБОУ ЛИЦЕЙ №145 &nbsp Авиастроительного ра�
       a.btn.active.header-geometry-button(href="/geometry.html")
         | раздел геометрии
         small.hide-on-small-only учебная работа по геометрии
+
+.container
+  .geometry-card
+    .geometry-list-content
+      h5
+        b Рабочая программа по геометрии 8 класс
+      = partial("download_link_chip", locals: { link: "https://goo.gl/Ghbdzz" })
+
+  .section
+    .row
+      .col.s12
+        h4 В помощь ученику для подготовки к проверочным работам:
+
+    .geometry-card
+      ul.geometry-list
+        - data.geometry.documents.each do |document|
+          li.geometry-list-section
+            .geometry-list-content
+              h6
+                b= document.title
+
+              - if document.subsections
+                ul.geometry-list-subsections
+                  - document.subsections.each do |sub|
+                    li= sub
+
+              - if document.link
+                .geometry-list-chip.chip
+                  b
+                    | Документ для скачивания:&nbsp;
+                    = link_to(document.link, document.link, target: "_blank")
+
+              - if document.preview
+                = image_tag(document.preview, class: "responsive-img")
+
+  .section
+    .row
+      .col.s12
+        h4 Полезные ссылки для учащихся на электронные образовательные ресурсы (ЭОР):
+
+    .geometry-card
+      ul.geometry-list
+        - data.geometry.news.each do |news|
+          li.geometry-list-section
+            .geometry-list-content
+              h6
+                b= news.title
+
+              p= news.content
+
+              - news.links.each do |link|
+                .chip
+                  = link_to(link.name, link.url, target: "_blank")
