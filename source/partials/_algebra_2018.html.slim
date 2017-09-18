@@ -1,0 +1,46 @@
+h1.light-blue-text.text-accent-2 9 Класс
+
+.section
+  .row
+    .col.s12
+      h4 В помощь ученику для подготовки к проверочным работам:
+
+  .algebra-card
+    ul.algebra-list
+      - data.algebra.year_2018.documents.each do |document|
+        li.algebra-list-section
+          .algebra-list-content
+            h6
+              b= document.title
+
+            - if document.subsections
+              ul.algebra-list-subsections
+                - document.subsections.each do |sub|
+                  li== sub
+
+            - if document.link
+              .algebra-list-chip.chip
+                b
+                  | Документ для скачивания:&nbsp;
+                  = link_to(document.link, document.link, target: "_blank")
+
+            - if document.preview
+              = image_tag(document.preview, class: "responsive-img lesson-document-img")
+
+.section
+  .row
+    .col.s12
+      h4 В данном разделе представлены подготовительные варианты контрольных работ по алгебре:
+
+  .algebra-exams-container
+    - data.algebra.year_2018.exams.each do |exam|
+      .card
+        .algebra-exam-title-wrapper
+          .card-title
+            = exam.title
+        .card-content
+          == exam.content
+
+				- if exam.link
+					.card-action
+						= link_to("Открыть", "assets/docs/algebra/#{exam.link}", target: "_blank")

@@ -4,7 +4,7 @@ title: Фотогалерея
 
 .container
   .row
-    - 6.times do |index|
+    - (0..8).to_a.reverse.each do |index|
       .col.s12.m6
         .card
           .card-image
