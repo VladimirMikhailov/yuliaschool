@@ -1,0 +1,1 @@
+(function(){$.fn.cultureCarousel=function(){var e;return e=new Swiper($(this),{slidesPerView:4,spaceBetween:40,pagination:".swiper-pagination",paginationClickable:!0,slideToClickedSlide:!0,breakpoints:{900:{slidesPerView:3},600:{slidesPerView:1,spaceBetween:20}}})}}).call(this);

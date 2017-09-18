@@ -1,0 +1,1 @@
+(function(){$.fn.headroom=function(){var n;return n=new Headroom(this.get(0),{offset:100,tolerance:5}),n.init()}}).call(this);

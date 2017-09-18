@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><title></title><meta content="width=device-width, initial-scale=1" name="viewport" /><link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" rel="stylesheet" type="text/css" /><link href="../assets/stylesheets/application-2e4e59e6.css" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><main><div class="navbar-fixed"><nav><div class="nav-wrapper"><a class="brand-logo" href="/"><h6 class="center"><b>MБОУ</b><br /><small><b>лицей</b></small><br /><b>№145</b></h6></a><a class="button-collapse" data-activates="mobile-nav" href="#"><i class="material-icons"><img src="../assets/images/menu-8a501d03.svg" /></i></a><ul class="right hide-on-med-and-down"><li><a href="/culture.html">воспитательная работа</a></li><li><a href="/parents.html">родителям</a></li><li><a href="/olympics.html">олимпиады</a></li><li><a href="/photos.html">фотогалерея</a></li></ul></div></nav></div><ul class="side-nav" id="mobile-nav"><li><a href="/">главная</a></li><li><a href="/culture.html">воспитательная работа</a></li><li><a href="/parents.html">родителям</a></li><li><a href="/olympics.html">олимпиады</a></li><li><a href="/photos.html">фотогалерея</a></li></ul><h1 id="partials">Partials</h1>
+
+<p>Partials are a way of sharing content across pages to avoid duplication.</p>
+
+<p>Partial files are prefixed with an underscore and include the templating language
+extension you are using. Here is an example footer partial named <code>_footer.erb</code>
+that lives in the <code>source/partials</code> folder:</p>
+
+<p><code>slim
+footer
+  | Copyright 2011
+</code></p>
+
+<p>Now, we can include this partial in the default layout using the <code>partial</code> method:</p>
+
+<p><code>slim
+body
+  = yield
+  = partial "footer"
+</code></p>
+
+<p>More info in the <a href="http://middlemanapp.com/basics/templates/#toc_6">Middleman guides</a></p>
+<footer class="page-footer cyan darken-3"><div class="container white-text"><div class="row"><div class="col l6 s12"><h5>Контактная информация</h5><address>420127, г. Казань, ул. Дементьева, д. 16, каб. 1205<br />E-Mail:<a class="yellow-text" href="mailto:yulia3201@mail.ru">&nbsp;yulia3201@mail.ru</a><br />Телефон: (843) 571-97-73</address></div><div class="col l3 s12"></div><div class="col l3 s12"></div></div></div><div class="footer-copyright"></div></footer></main><script src="../assets/javascripts/application-8bc3ea46.js" type="text/javascript" async="true" defer="defer"></script></body></html>

@@ -1,0 +1,1 @@
+(function(){$.fn.awardsCarousel=function(){var e;return e=new Swiper($(this),{slidesPerView:3,spaceBetween:80,loop:!0,centeredSlides:!0,slideToClickedSlide:!0,breakpoints:{900:{spaceBetween:30},600:{slidesPerView:1}}})}}).call(this);
